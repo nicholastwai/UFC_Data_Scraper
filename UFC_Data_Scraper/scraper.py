@@ -46,7 +46,8 @@ class Ufc_Data_Scraper:
 
         return - list of fighter objects
         """
-
+        starting_dir = os.getcwd()#track starting dir to return after call
+        
         #handling bad function calls by displaying error and exiting function
         if load_from_dir and save_https != False:
             print("If loading from directory the option to save is not available. Please call again")
@@ -56,7 +57,6 @@ class Ufc_Data_Scraper:
 
         #Either load from directory and parse data or request each link and parse
         if load_from_dir:
-            starting_dir = os.getcwd()#track starting dir to return after call
 
             os.chdir(correct_dir)
             files = os.listdir()
