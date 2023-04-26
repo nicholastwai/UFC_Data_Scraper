@@ -241,12 +241,12 @@ class Ufc_Data_Scraper:
         else:
             dir_exist = False
 
-        keyboard_input = input("Creating missing directories. If you want to stop this press n\n") #diag
+        #keyboard_input = input("Creating missing directories. If you want to stop this press n\n") #diag
 
         #only create file structure if user approves
-        if(keyboard_input.upper() == 'N'):
-            print("\n\nMust create directories to use package. \n\nexiting....")
-            return
+        #if(keyboard_input.upper() == 'N'):
+            #print("\n\nMust create directories to use package. \n\nexiting....")
+            #return
 
         #if they don't exist create dirs
         if not dir_exist:
